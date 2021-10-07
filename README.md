@@ -7,5 +7,5 @@ Apply HTML elements and attributes knowledge to create an HTML webpage
 # [Assignment 2](https://perkinsgianni.github.io/Assignment2.html)
 Apply HTML to create a web page
 
-# [Project 1](https://github.com/perkinsgianni/perkinsgianni.github.io/tree/main/Projects/Project%201)
+# [Project 1](https://perkinsgianni.github.io/Project1/)
 Build a static website (e.g. an informative travel theme website) using HTML, CSS
