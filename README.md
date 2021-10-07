@@ -4,7 +4,7 @@ QCC’s Software Engineering Micro-Credential Career Track in Web Development is
 # [Assignment 1](https://perkinsgianni.github.io/Assignment1.html)
 Apply HTML elements and attributes knowledge to create an HTML webpage
 
-# [Assignment 2](https://github.com/perkinsgianni/perkinsgianni.github.io/tree/main/Assignments/Assignment%202)
+# [Assignment 2](https://perkinsgianni.github.io/Assignment2.html)
 Apply HTML to create a web page
 
 # [Project 1](https://github.com/perkinsgianni/perkinsgianni.github.io/tree/main/Projects/Project%201)
