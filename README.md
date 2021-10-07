@@ -5,5 +5,10 @@ QCC’s Software Engineering Micro-Credential Career Track in Web Development is
 
 
 # [Projects](https://github.com/perkinsgianni/perkinsgianni.github.io/tree/main/Projects)
+Build a static website (e.g. an informative travel theme website) using HTML, CSS
 
 # [Assignment 1](https://github.com/perkinsgianni/perkinsgianni.github.io/blob/main/Assignments/Assignment%201/Assignment%201.html)
+Apply HTML elements and attributes knowledge to create an HTML webpage
+
+# [Assignment 2](https://github.com/perkinsgianni/perkinsgianni.github.io/blob/main/Assignments/Assignment%201/Assignment%201.html)
+Apply HTML to create a web page
