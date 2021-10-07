@@ -6,3 +6,4 @@ QCC’s Software Engineering Micro-Credential Career Track in Web Development is
 
 # [Projects](https://github.com/perkinsgianni/perkinsgianni.github.io/tree/main/Projects)
 
+# [Assignment 1](https://github.com/perkinsgianni/perkinsgianni.github.io/blob/main/Assignments/Assignment%201/Assignment%201.html)
