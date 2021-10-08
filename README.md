@@ -10,4 +10,3 @@ Apply HTML to create a web page
 # [Project 1](https://perkinsgianni.github.io/Project1/)
 Build a static website (e.g. an informative travel theme website) using HTML, CSS
 
-# [Overlapping Layout](https://perkinsgianni.github.io/layout.html)
