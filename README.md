@@ -14,3 +14,5 @@ Apply HTML to create a web page
 # [Project 1](https://perkinsgianni.github.io/Project1/)
 Build a static website (e.g. an informative travel theme website) using HTML, CSS
 
+# [Assignment 3](https://perkinsgianni.github.io/Assignment3.html)
+Apply CSS layout and animation to create a web page
