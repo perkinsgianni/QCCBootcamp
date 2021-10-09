@@ -9,10 +9,11 @@ Apply HTML elements and attributes knowledge to create an HTML webpage
 # [Assignment 2](https://perkinsgianni.github.io/Assignment2.html)
 Apply HTML to create a web page
 
+# [Assignment 3](https://perkinsgianni.github.io/Assignment3.html)
+Apply CSS layout and animation to create a web page
+
 # Projects
 
 # [Project 1](https://perkinsgianni.github.io/Project1/)
 Build a static website (e.g. an informative travel theme website) using HTML, CSS
 
-# [Assignment 3](https://perkinsgianni.github.io/Assignment3.html)
-Apply CSS layout and animation to create a web page
