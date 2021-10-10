@@ -1,0 +1,65 @@
+body {
+  background-color: lightyellow;
+}
+
+.headerBox {
+  background-color: lightblue;
+  height: 200px;
+  padding-left: 16%;
+}
+
+.logoBox {
+  background-color: orange;
+  height: 100%;
+  width: 26%;
+  float: left;
+}
+
+.logoBox > img {
+  height: 100%;
+  width: 100%;
+}
+
+.titlesBox {
+  background-color: purple;
+  height: 100%;
+  width: 72%;
+  text-align: center;
+}
+
+.titlesBox > h1 {
+  padding-top: 10%;
+  font-family: monospace;
+  font-size: 3em;
+  color: green;
+}
+
+.titlesBox > h2 {
+  font-family: cursive;
+}
+
+
+@keyframes logoMove {
+  0%
+  20%
+}
+
+@keyframes titleMove {
+  0%
+}
+
+@keyframes subtitleMove {
+
+}
+
+.row {
+  height: 400px;
+  background-color: pink;
+}
+
+.productBox {
+  width: 30%;
+  height: 100%;
+  background-color: white;
+  float: left;
+}
