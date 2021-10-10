@@ -1,8 +1,37 @@
-div {
+.box2 {
+  background-color: white;
+  height: 600px;
+  margin-top: 20px;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.box2 > img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.messageBox {
+  height: 80px;
+  width: 35%;
+  position: absolute;
+  top: 67%;
+  right: 30px;
+  background-color: gray;
+  opacity: 0.7;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.box {
   background-color: tan;
   padding-top: 20px;
-  padding-bottom: 30%;
-  height: 300px;
+  padding-bottom: 28%;
+  height: 350px;
+  width: 92%;
+  position: relative;
+  margin-left: 4%;
 }
 
 .box > h1 {
@@ -10,13 +39,14 @@ div {
   width: 36%;
   text-align: center;
   margin: 20px auto;
+  margin-bottom: 30px;
 }
 
 .sub {
   width: 23%;
   height: 40%;
   float: left;
-  margin-left: 1.2%;
+  margin-left: 1.6%;
   text-align: center;
 }
 
@@ -38,26 +68,57 @@ div {
   border-radius: 5px;
 }
 
-.box2 {
-  background-color: white;
-  height: 600px;
-  margin-top: 20px;
+.clock {
+  margin-top: 58%;
+  margin-left: 9.9%;
+  background-color: pink;
+  width: 80%;
+  height: 750px;
   position: relative;
 }
 
-.box2 > img {
-  width: 100%;
-  height: 100%;
+.clock > img {
+  height: 85%;
+  width: 70%;
+  display: block;
+  margin: auto;
+  padding-top: 6.5%;
+  position: relative;
 }
 
-.messageBox {
-  height: 0px;
-  width: 35%;
+#hourhand {
+  height: 110px;
+  width: 200px;
+  top: 35.2%;
+  right: 28.5%;
   position: absolute;
-  top: 45%;
-  right: 30px;
-  background-color: gray;
-  opacity: 0.7;
-  text-align: center;
-  padding-top: 0px;
+  animation-name: movehourhand;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+#minutehand {
+  height: 100px;
+  width: 220px;
+  top: 25.8%;
+  left: 34.7%;
+  position: absolute;
+  transform: rotate(-90deg);
+  animation-name: moveminutehand;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes movehourhand {
+  0% {top: 35.2%}
+  33% {transform-origin: 19%; transform: rotate(15deg)}
+  66% {transform-origin: 6%; transform: rotate(22.5deg)}
+  100% {transform-origin: 2% 70%; transform: rotate(30deg)}
+}
+
+@keyframes moveminutehand {
+  0% {top: 25.8%}
+  33% {transform-origin: 0%; transform: rotate(90deg)}
+  66% {transform-origin: 0%; transform: rotate(180deg)}
+  100% {transform-origin: 0%; transform: rotate(270deg)}
 }
