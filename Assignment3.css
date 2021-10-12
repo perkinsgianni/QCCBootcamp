@@ -101,8 +101,8 @@
 #minutehand {
   height: 100px;
   width: 220px;
-  top: 39.3%;
-  left: 53%;
+  top: 39%;
+  left: 49.5%;
   position: absolute;
   transform: rotate(-90deg);
   animation-name: moveminutehand;
@@ -112,15 +112,11 @@
 }
 
 @keyframes movehourhand {
-  0% {}
-  33% {transform: rotate(15deg)}
-  66% {transform: rotate(22deg)}
-  100% {transform: rotate(29deg)}
+  0% {transform: rotate(0deg)}
+  100% {transform: rotate(27deg)}
 }
 
 @keyframes moveminutehand {
-  0% {}
-  33% {transform: rotate(80deg)}
-  66% {transform: rotate(160deg)}
+  0% {transform: rotate(-90deg)}
   100% {transform: rotate(270deg)}
 }
