@@ -88,27 +88,26 @@
 
 #hourhand {
   height: 110px;
-  width: 200px;
+  width: 170px;
   top: 35%;
-  right: 28.5%;
+  right: 32.5%;
   position: absolute;
   animation-name: movehourhand;
   animation-duration: 10s;
   animation-iteration-count: infinite;
-  transform-origin: left;
+  transform-origin: center left;
 }
 
 #minutehand {
   height: 100px;
-  width: 220px;
-  top: 39%;
-  left: 49.5%;
+  width: 200px;
+  top: 41%;
+  left: 47%;
   position: absolute;
-  transform: rotate(-90deg);
   animation-name: moveminutehand;
   animation-duration: 10s;
   animation-iteration-count: infinite;
-  transform-origin: left;
+  transform-origin: center left;
 }
 
 @keyframes movehourhand {
