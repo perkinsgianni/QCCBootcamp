@@ -3,63 +3,180 @@ body {
 }
 
 .headerBox {
-  background-color: lightblue;
+  background-color: lightyellow;
   height: 200px;
   padding-left: 16%;
+  margin-bottom: -5.3%;
 }
 
 .logoBox {
-  background-color: orange;
-  height: 100%;
-  width: 26%;
+  border: 3px solid olive;
+  box-shadow: 1px 1px darkkhaki, -1px -1px darkkhaki;
+  background-color: lightyellow;
+  border-radius: 30px;
+  height: 50%;
+  width: 9%;
   float: left;
+  animation: enlargeLogo 3.5s;
+  animation-iteration-count: infinite;
 }
 
-.logoBox > img {
+/* @keyframes enlargeLogo {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+} */
+
+.titleBox {
+  background-color: lightyellow;
   height: 100%;
+  width: 85%;
+}
+
+.titleBox > h1 {
+  margin-left: 15%;
+  color: olive;
+  font-family: cursive;
+  font-size: 3em;
+  animation: moveTitle 0.55s;
+  animation-iteration-count: infinite;
+}
+
+/* @keyframes moveTitle {
+  0%, 100% {bottom: 0;}
+  50% {bottom: 100px;}
+} */
+
+.titleBox > h2 {
+  margin-top: -3.3%;
+  margin-left: 15%;
+  font-size: 1.3em;
+  animation: moveSubtitle 0.25s;
+  animation-iteration-count: infinite;
+}
+
+/* @keyframes moveSubtitle {
+  0%, 100% {top: 0;}
+  50% {top: 100px;}
+} */
+
+.stage {
+  height: 60px;
+  width: 98.1%;
+  overflow: hidden;
+  border: 2px solid red;
+  margin-left: 15px;
+  margin-top: -70px;
+}
+
+.slideGroup {
+  height: 100%;
+  width: 99.40%;
+  animation: slideshow 5s;
+  animation-iteration-count: infinite;
+  border: 2px solid blue;
+}
+
+/* @keyframes slideshow {
+  0% {transform: translateX(0%)}
+  33% {transform: translateX(66%)}
+  66% {transform: translateX(120%)}
+  100% {transform: translateX(130%)}
+} */
+
+.slide1, .slide2, .slide3 {
+  text-align: center;
+  float: left;
+  height: 100%;
+  width: 31.9%;
+}
+
+.slide1 {
+  background-color: #e5c062;
+}
+
+.slide2 {
+  background-color: #6c541e;
+  color: white;
+}
+
+.slide3 {
+  background-color: olive;
+  color: white;
+}
+
+.flowerBlock {
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.flowerBlock > img {
+  width: 100%;
+  height: 600px;
+}
+
+.flowerTextBlock {
+  border: 4px solid white;
+  background-color: #A0A0A0;
+  position: absolute;
+  margin-left: 80px;
+  height: 15%;
+  width: 28%;
+  top: 30%;
+  padding: 10px 20px 35px 25px;
+}
+
+.textblocks {
+  border: 2px solid orange;
+  width: 95%;
+  margin-left: 40px;
+}
+
+.block1 {
+  border: 2px solid orange;
+  width: 40.8%;
+  float: left;
+  margin-right: 17.5%;
+  position: relative;
+}
+
+.block1 > img {
+  height: 350px;
   width: 100%;
 }
 
-.titlesBox {
-  background-color: purple;
-  height: 100%;
-  width: 72%;
-  text-align: center;
+.ingredients {
+  border: 2px solid blue;
+  top: 80px;
 }
 
-.titlesBox > h1 {
-  padding-top: 10%;
-  font-family: monospace;
-  font-size: 3em;
-  color: green;
-}
-
-.titlesBox > h2 {
-  font-family: cursive;
-}
-
-
-@keyframes logoMove {
-  0%
-  20%
-}
-
-@keyframes titleMove {
-  0%
-}
-
-@keyframes subtitleMove {
+.block2 {
+  border: 2px solid orange;
+  padding: 25px 20px 20px 35px;
+  background-color: lightgray;
+  position: relative;
+  float: left;
+  height: 295px;
+  width: 36%;
 
 }
 
-.row {
+/* .row {
   height: 400px;
   background-color: pink;
 }
+
 
 .productBox {
   width: 30%;
   height: 100%;
   background-color: white;
   float: left;
+} */
+
+.footer {
+  border: 2px solid pink;
+  margin-top: 50%;
+  
 }
