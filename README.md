@@ -19,3 +19,5 @@ Build a static website (e.g. an informative travel theme website) using HTML, CS
 
 # [Project 2](https://perkinsgianni.github.io/Project2/SalesWebpage.html)
 Create a sales webpage using knowledge of colors, image manipulation, layout, animation, and modal window
+
+#[Project 3]
