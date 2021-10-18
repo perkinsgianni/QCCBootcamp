@@ -17,7 +17,7 @@ Apply CSS layout and animation to create a web page
 # [Project 1](https://perkinsgianni.github.io/Project1/)
 Build a static website (e.g. an informative travel theme website) using HTML, CSS
 
-# [Project 2](https://)
+# [Project 2](https://perkinsgianni.github.io/Project2/SalesWebpage.html)
 Create a sales webpage using knowledge of colors, image manipulation, layout, animation, and modal window
 
 # [Project 3](https://perkinsgianni.github.io/Project3/)
