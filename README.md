@@ -13,7 +13,7 @@ Apply HTML to create a web page
 Apply CSS layout and animation to create a web page
 
 # [Assignment 4](https://perkinsgianni.github.io/Assignment4.html)
-Create a JavaScript file (link it to an HTML file), and write code for a BMI calculator and temperature converter
+Create a JavaScript file and write code for a BMI calculator and temperature converter
 
 # Projects
 
