@@ -28,9 +28,10 @@ function clearTextFiled() {
 }
 
 function updateTryHistory(guessedNumber) {
-    const paragraph = document.createElement("P");
+    const paragraph = document.createElement("p");
+    paragraph.className = "p";
     const text = document.createTextNode(guessedNumber);
-    let parentDiv = document.getElementById("childGuessedScores");
+    let parentDiv = document.getElementById("testDiv");
     paragraph.appendChild(text);
     parentDiv.appendChild(paragraph);
 }
@@ -42,10 +43,13 @@ function updateScore() {
 }
 
 function resetAllLives() {
-    for (let index = 0; 0 < 10; index++) {
-      let scoreLabel = document.getElementById(index);
-      scoreLabel.src = imagePaths[index];
-    }
+  let index = 0
+
+  while (index < 10) {
+    let scoreLabel = document.getElementById(String(index));
+    scoreLabel.src = imagePaths[index];
+    index++;
+  }
   }
 
 function updateGuessButtonWinnerStyle() {
@@ -66,33 +70,45 @@ function disableTextField() {
   let guessedNumber = document.getElementById('guessField').disabled = true;
 }
 
+function enableTextField() {
+  let guessedNumber = document.getElementById('guessField').disabled = false;
+}
+
+function updateHighScoreIfNeeded() {
+  const trophyImage = document.getElementById('trophyImage');
+  trophyImage.style.opacity = 1;
+
+  const highscoreLabel = document.getElementById('highScoreLabel');
+  highscoreLabel.textContent = score;
+}
+
+
 const submitButton = document.getElementById('guessButton');
 submitButton.addEventListener('click', function () {
        let guessedNumber = getNum();
-       console.log(guessedNumber)
-       console.log(randomNumber);
-      updateTryHistory(guessedNumber);
       const resetButton = document.getElementById('resetButton');
 const promptLabel = document.getElementById("promptLabel");
 
-        if (guessedNumber.length === 0) {
+        if (isNaN(guessedNumber)) {
             const image = document.getElementById("image");
             image.src = "images/eyeroll.gif";
-            promptLabel.textContent = "NO!";
+            promptLabel.textContent = "NO! Enter a number between 1 and 100!";
         } else {
-            guessedNumber = Number(getNum())
+            guessedNumber = Number(guessedNumber)
 
             if (guessedNumber === 0) {
                 const image = document.getElementById("image");
                 image.src = "images/eyeroll.gif";
                 promptLabel.textContent = "WRONG! Number must be between 1 and 100!";
                 updateScore();
+                updateTryHistory(guessedNumber);
             } else {
               if (guessedNumber > 100) {
                   const image = document.getElementById("image");
                   image.src = "images/eyeroll.gif";
                   promptLabel.textContent = "Guess again!";
                   updateScore();
+                  updateTryHistory(guessedNumber);
               }
 
               if (randomNumber < guessedNumber) {
@@ -100,6 +116,7 @@ const promptLabel = document.getElementById("promptLabel");
                   image.src = "images/walkaway.gif";
                   promptLabel.textContent = "Lower!";
                   updateScore();
+                  updateTryHistory(guessedNumber);
               }
 
               if (randomNumber > guessedNumber) {
@@ -107,6 +124,7 @@ const promptLabel = document.getElementById("promptLabel");
                   image.src = "images/dontknow.gif";
                   promptLabel.textContent = "Higher!";
                   updateScore();
+                  updateTryHistory(guessedNumber);
               }
 
               if (guessedNumber === randomNumber) {
@@ -120,48 +138,20 @@ const promptLabel = document.getElementById("promptLabel");
                   updateGuessButtonWinnerStyle();
                   resetButton.style.backgroundColor = "green";
                   disableTextField();
+                  updateTryHistory(guessedNumber);
+
+                  if (score > highscore) {
+                    highscore = score;
+                    updateHighScoreIfNeeded();
+                  }
               }
             }
-
-            // if (guessedNumber > 100 || guessedNumber < 1) {
-            //     const image = document.getElementById("image");
-            //     image.src = "images/eyeroll.gif";
-            //     promptLabel.textContent = "Guess again!";
-            //     updateScore();
-            // }
-            //
-            // if (randomNumber < guessedNumber) {
-            //     const image = document.getElementById("image");
-            //     image.src = "images/walkaway.gif";
-            //     promptLabel.textContent = "Lower!";
-            //     updateScore();
-            // }
-            //
-            // if (randomNumber > guessedNumber) {
-            //     const image = document.getElementById("image");
-            //     image.src = "images/dontknow.gif";
-            //     promptLabel.textContent = "Higher!";
-            //     updateScore();
-            // }
-            //
-            // if (guessedNumber === randomNumber) {
-            //     const image = document.getElementById("image");
-            //     image.src = "images/winner.gif";
-            //     promptLabel.textContent = "WINNER!";
-            //     initConfetti();
-            //     const canvas = document.getElementById("canvas");
-            //     canvas.style.opacity = 1;
-            //     render();
-            //     updateGuessButtonWinnerStyle();
-            //     resetButton.style.backgroundColor = "green";
-            //     disableTextField();
-            // }
 
             if (0 === score) {
               const image = document.getElementById("image");
                 image.src = "images/crying.gif";
                 const promptLabel = document.getElementById("promptLabel")
-                promptLabel.textContent = "Game Over"
+                promptLabel.textContent = `Game Over! The number was ${randomNumber}`;
                 updateGuessButtonWinnerStyle();
                 disableTextField();
                 resetButton.style.backgroundColor = "green";
@@ -182,10 +172,13 @@ promptLabel.textContent = "";
 updateGuessButtonResetStyle();
 score = 10;
 resetAllLives();
-
-let parentDiv = document.getElementById("guessedScores");
-parentDiv.replaceChildren([]);
-
+enableTextField();
+let parentDiv = document.getElementById("testDiv");
+const paragraph = document.getElementsByTagName("p");
+let i = 0;
+while ( paragraph.length != 0) {
+  parentDiv.removeChild(paragraph[i]);
+}
 })
 
 
@@ -225,15 +218,7 @@ const confettiCount = 600;
 const gravity = 0.5;
 const terminalVelocity = 5;
 const drag = 0.075;
-const colors = [{ front: 'red', back: 'darkred' },
-{ front: 'green', back: 'darkgreen' },
-{ front: 'blue', back: 'darkblue' },
-{ front: 'yellow', back: 'darkyellow' },
-{ front: 'orange', back: 'darkorange' },
-{ front: 'pink', back: 'darkpink' },
-{ front: 'purple', back: 'darkpurple' },
-{ front: 'turquoise', back: 'darkturquoise' }];
-
+const colors = [{ front: 'green', back: 'darkgreen' }];
 
 //-----------Functions--------------
 resizeCanvas = () => {
@@ -316,20 +301,3 @@ render = () => {
 window.addEventListener('resize', function () {
   resizeCanvas();
 });
-
-// Range Slider
-// var slider = document.getElementById("myRange");
-// var output = document.getElementById("guessField");
-//
-// slider.oninput = function() {
-//   console.log(this.value)
-//   output.value = this.value;
-// }
-
-// RESET?
-// const head2 = document.getElementById('resetButton')
-//
-// head2.addEventListener('click', function () {
-//
-//
-//   document.querySelector('body').style.backgroundColor = "#627881"
