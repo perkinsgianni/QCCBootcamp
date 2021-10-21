@@ -1,0 +1,171 @@
+body {
+  background-color: #D6B7A2;
+}
+
+.instructions {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  animation: movetopBar 15s linear infinite;
+}
+
+@keyframes movetopBar {
+  from {transform: translateX(24%);}
+  to {transform: translateX(-22%);}
+}
+
+.interface {
+  height: 600px;
+  width: 80%;
+  background: #fbceb1;
+  margin-left: 9.5%;
+  margin-top: 5%;
+  position: absolute;
+  text-align: center;
+  border-radius: 15px;
+  float: left;
+}
+
+.activeInterface {
+  top: 20%;
+  height: 400px;
+  width: 65%;
+  margin-left: 10%;
+  position: absolute;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.sliderTextContainer {
+  width: 54.5%;
+  height: 50px;
+  position: relative;
+  margin-top: 8%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sliderContainer {
+  width: 40%;
+  margin-top: 2.5%;
+  position: relative;
+  float: left;
+}
+
+.textField {
+  height: 50px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  background-color: #D6B7A2;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.buttons {
+  height: 50px;
+  width: 70%;
+  top: 13%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.button {
+  color: white;
+  background-color: #D6B7A2;
+  float: left;
+  height: 90%;
+  width: 40%;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.button2 {
+  color: white;
+  background-color: #D6B7A2;
+  float: right;
+  height: 90%;
+  width: 40%;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.scoreContainer {
+  border-left: 2px solid #D6B7A2;
+  float: left;
+  height: 99%;
+  width: 20%;
+  margin-left: 80%;
+  position: absolute;
+}
+
+.guessedScores {
+  height: 49%;
+  color: white;
+  padding-top: 5px;
+}
+
+.childGuessedScores {
+  width: 50%;
+  position: relative;
+}
+
+.highScores {
+  color: white;
+  height: 49%;
+  width: 99%;
+  border-top: 2px solid #D6B7A2;
+  padding-top: 5px;
+}
+
+.imageDiv {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imageLives {
+  width: 30px;
+  height: 30px;
+}
+
+.livesDiv {
+  margin-left: 4%;
+  margin-top: 25px;
+  position: absolute;
+}
+
+.image {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.promptLabel {
+  color: white;
+}
+
+.confetti{
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+}
