@@ -1,0 +1,106 @@
+.layout {
+  margin: 3% 5.5% 0% 5.5%;
+}
+
+.leftHandColumn {
+  width: 12%;
+  position: absolute;
+  float: left;
+}
+
+.searchContainer {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.form {
+  border: 1.3px solid lightgray;
+}
+
+.searchField {
+  width: 100%;
+  padding: 10px 35px 10px 15px;
+  font-size: 12px;
+  border: none;
+  outline: none;
+}
+
+.searchButton {
+  width: 30px;
+  height: 30px;
+  margin-top: 11px;
+  margin-left: -45px;
+  position: absolute;
+  display: inline;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.buttonImage {
+  width: 20px;
+  height: 90%;
+  margin-top: -2px;
+  margin-left: 8px;
+  position: relative;
+}
+
+hr {
+  border: 0.8px solid lightgray;
+  margin-bottom: 25px;
+}
+
+.categoriesTitle {
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+li {
+  margin-bottom: 18px;
+  margin-left: -40px;
+}
+
+li.F {
+  margin-bottom: 25px;
+}
+
+a:hover, a:visited, a:link, a:active {
+  color: gray;
+  font-size: 14px;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.heroBlockContainer {
+  width: 75.5%;
+  height: 80%;
+  margin-left: 14%;
+  float: right;
+  position: absolute;
+}
+
+.heroRow1, .heroRow2 {
+  width: 100%;
+  height: 46%;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.heroBlock1, .heroBlock2 {
+  width: 28.87%;
+  height: 99.8%;
+  margin-left: 4%;
+  float: left;
+  position: relative;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.influencers, :last-child > img {
+  width: 99%;
+  height: 80%;
+}
+
+hr.hb {
+  margin-bottom: -10px;
+}
