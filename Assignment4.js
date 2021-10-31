@@ -1,5 +1,7 @@
 // BMI calculator
 
+console.log(`BMI Calculator`);
+
 let lucasMass = 78
 let lucasHeight = 1.69
 let johnMass = 92
@@ -17,6 +19,8 @@ console.log(`Lucas' BMI is higher than John's BMI, that is ${lucasHigherBMI}.`)
 
 // Temperature Converter
 
+console.log(`Temperature Converter`);
+
 var tempCelsius = 11
 var tempFahrenheit = (tempCelsius * 9/5) + 32
 console.log(`${tempCelsius}°C is ${Math.round(tempFahrenheit)}°F.`)
@@ -27,6 +31,8 @@ console.log(`${tempFahrenheit}°F is ${Math.round(tempCelsius)}°C.`)
 
 
 // BMI statements
+
+console.log(`Comparative BMI Statements`);
 
 console.log(`Lucas' BMI is higher than John's!`)
 
