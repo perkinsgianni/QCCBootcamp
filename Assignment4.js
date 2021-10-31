@@ -1,6 +1,7 @@
 // BMI calculator
 
-console.log(`BMI Calculator\n`);
+console.log(`BMI Calculator`);
+console.log(`\n`);
 
 let lucasMass = 78
 let lucasHeight = 1.69
