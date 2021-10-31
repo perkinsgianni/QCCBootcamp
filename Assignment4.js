@@ -1,6 +1,6 @@
 // BMI calculator
 
-console.log(`BMI Calculator`);
+console.log("BMI Calculator");
 console.log(`\n`);
 
 let lucasMass = 78
