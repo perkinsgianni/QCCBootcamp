@@ -1,7 +1,6 @@
 // BMI calculator
 
-console.log("BMI Calculator");
-console.log(`\n`);
+console.log(`BMI Calculator`);
 
 let lucasMass = 78
 let lucasHeight = 1.69
@@ -17,6 +16,8 @@ console.log(`Lucas' BMI is ${Math.round(lucasBMI)}.`)
 console.log(`John's BMI is ${Math.round(johnBMI)}.`)
 console.log(`Lucas' BMI is higher than John's BMI, that is ${lucasHigherBMI}.`)
 
+console.log(`\n`);
+
 
 // Temperature Converter
 
@@ -29,6 +30,8 @@ console.log(`${tempCelsius}°C is ${Math.round(tempFahrenheit)}°F.`)
 var tempFahrenheit = 64
 var tempCelsius = (tempFahrenheit - 32) * 5/9
 console.log(`${tempFahrenheit}°F is ${Math.round(tempCelsius)}°C.`)
+
+console.log(`\n`);
 
 
 // BMI statements
