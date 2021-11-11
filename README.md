@@ -30,4 +30,5 @@ Create a web game app using knowledge of HTML, CSS, JavaScript and DOM
 Create a database using knowledge of front-end and back-end topics
 
 # Miscellaneous
-# [CSS Animation]
+
+# [CSS Animation](https://perkinsgianni.github.io/CSSanimation.html)
