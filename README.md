@@ -35,7 +35,7 @@ Create a sales webpage using knowledge of colors, image manipulation, layout, an
 Create a web game app using knowledge of HTML, CSS, JavaScript and DOM
 
 # [Final Project](https://perkinsgianni.github.io/FinalProject/BlackDatabase.html)
-Create a database using knowledge of front-end and back-end topics
+Create a database using knowledge of front-end and back-end skills
 
 # Miscellaneous
 
