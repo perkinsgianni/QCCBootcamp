@@ -28,7 +28,8 @@
 .searchButton {
   width: 30px;
   height: 30px;
-  margin-top: 7px;
+  /* margin-top: 7px; */
+  margin-top: 6.8px;
   margin-left: -45px;
   position: absolute;
   display: inline;
