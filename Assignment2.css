@@ -24,7 +24,8 @@ ul {
   position: relative;
   height: 17px;
   left: -5px;
-  top: 1px;
+  /* top: 1px; */
+  top: 0.9px;
   padding-top: 0px;
 }
 
