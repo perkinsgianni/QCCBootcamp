@@ -18,7 +18,7 @@ Apply HTML elements and attributes knowledge to create an HTML webpage
 Apply HTML to create a web page
 
 ### [Assignment 3](https://perkinsgianni.github.io/Assignment3.html)
-Apply CSS layout and animation to create a web page
+Apply CSS layout to create a web page
 
 ### [Assignment 4](https://perkinsgianni.github.io/Assignment4.html)
 Create a JavaScript file and write code for a BMI calculator and temperature converter
