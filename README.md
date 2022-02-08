@@ -32,7 +32,7 @@ Create a sales webpage using knowledge of colors, image manipulation, layout, an
 ### [Project 3](https://perkinsgianni.github.io/QCCBootcamp/Project3/project3.html)
 With a partner, create a web game app using knowledge of HTML, CSS, JavaScript and DOM
 
-### [Project 4](https://github.com/perkinsgianni/boi#readme)
+### [Project 4](https://github.com/perkinsgianni/BOI#readme)
 With a group, create a database using knowledge of front-end and back-end skills
 
 ## Miscellaneous
