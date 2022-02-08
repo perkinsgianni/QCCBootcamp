@@ -12,7 +12,7 @@
 ### [Assignment 1](https://perkinsgianni.github.io/Assignment1.html)
 Apply HTML elements and attributes knowledge to create an HTML webpage
 
-### [Assignment 2](https://perkinsgianni/QCCBootcamp/Assignment2.html)
+### [Assignment 2](https://perkinsgianni/QCCBootcamp.git/Assignment2.html)
 Apply HTML to create a web page
 
 ### [Assignment 3](https://perkinsgianni.github.io/Assignment3.html)
