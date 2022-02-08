@@ -1,10 +1,3 @@
-# DS4A
-
-## Python Mini-Project
-### [Encryption-Decryption Machine](https://gist.github.com/perkinsgianni/2edd65f0a164d655068bf0783f013471)
-
--------
-
 # QCC Software Engineering Bootcamp
 
 ## Assignments
